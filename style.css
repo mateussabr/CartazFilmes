@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #2b193e;
+    --darker-color: #0d050e;
+    --secondary-color: #8d2d56;
+}
+
+:focus{
+    outline: none;
+}
+
+html{
+    font-size: 10px;    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+.section{
+    margin: 2rem 0;
+}
+
+.conteiner{
+    width: 100rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0.1rem 1rem 0.8rem rgba(59, 59, 59, 0.15);
+    height: 6.4rem;
+}
+
+#search-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#name-page{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+input{
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid white 0.1rem;
+    margin: 0 0.5rem;
+    padding: 0.25rem;
+    color: white;
+}
+
+input:focus{
+    color: white
+}
+
+div > label{
+    font-size: 1.3rem;
+}
+
+#button-search{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+#text{
+    font-weight: 700;
+    color: var(--darker-color);
+    font-size: 2rem;  
+}
+
+#highlight{
+    color: var(--secondary-color)
+}
+
+main{
+    text-align: center;
+    flex-grow: 1;
+    padding: 2rem 0;
+}
+
+.button-remove-movie{
+    border: 0.1rem solid var(--darker-color);
+    background-color: var(--darker-color);
+    color: white;
+    width: 100%;
+    padding: 0.5rem;   
+}
+
+.button-remove-movie:hover{
+    background-color: transparent;
+    color: var(--darker-color);
+    border: 0.1rem solid var(--darker-color);
+}
+
+#movies-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+} 
+
+#movies-list article{
+    display: flex;
+    flex-direction: column;
+}
+
+#movies-list article img{
+    margin-bottom: 0.5rem
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="./notie-master/src/dist/notie.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>    
+            <p id="name-page">mymovies</p>
+            <div id="search-conteiner">
+                <div class="group-input">
+                    <label for="input-name">Nome: </label>
+                    <input type="text" id="input-name">
+                </div>
+                <div class="group-input">
+                    <label for="input-age">Ano: </label>
+                    <input type="text" id="input-age">
+                </div>
+                <button id="button-search"><i class="bi bi-search"></i></button>
+            </div>
+        </header>
+        
+        <main>
+            <h1 id="text">Comece agora sua lista de <span id="highlight">filme!</span></h1>
+            <section id="movies-list">
+                
+            </section>
+            <article id="modal-overlay" class="closed">
+                <div id="modal-background"></div>
+                <section id="modal-conteiner">
+                </section>
+            </article>
+        </main>
+        <script src="./script.js"></script>
+        <script src="./key.js"></script>
+        <script src="./notie-master/src/dist/notie.js"></script>
+        <script src="./modal.js"></script>
+    </body>
+</html> 
